@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
 
+body.modal-open {
+    overflow: hidden;
+    position: fixed;
+}
+body.viewport-lg {
+    position: absolute; 
+}
 *{
     margin:0;
     padding: 0;
@@ -12,6 +19,7 @@
 body{
     background-color: #fbfaf9;
     overflow-x: hidden;
+    overflow-y: scroll !important;
 }
 a{
     text-decoration: none;
@@ -294,7 +302,7 @@ h2{
     
 }
 @media screen and (max-width:915px) {
-    body{
+    html,body{
         overflow-x: hidden;
     }
     .nav_items{
@@ -321,9 +329,10 @@ h2{
     .main_container{
         height: 125vh;
     }
-    .header_wrapper{
-        margin-left: -5rem;
+    #contact{
+        flex-direction: column;
     }
+    
     
 }
 .nav_active{
@@ -340,7 +349,5 @@ h2{
     .photo_container{
         flex: 1 1 50%;
     }
-    .contact{
-        flex-direction: column;
-    }
+    
 }
