@@ -18,7 +18,8 @@ body.viewport-lg {
 }
 body{
     background-color: #fbfaf9;
-    overflow-x: hidden;
+    position:relative;
+    overflow-x: hidden !important;
     overflow-y: scroll !important;
 }
 a{
