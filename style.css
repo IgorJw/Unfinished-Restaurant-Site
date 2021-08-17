@@ -20,7 +20,6 @@ body{
     background-color: #fbfaf9;
     position:relative;
     overflow-x: hidden !important;
-    overflow-y: scroll !important;
 }
 a{
     text-decoration: none;
@@ -303,14 +302,12 @@ h2{
     
 }
 @media screen and (max-width:915px) {
-    html,body{
-        overflow-x: hidden;
-    }
+    
     .nav_items{
         width: 100%;
         position: absolute;
         right: 0px;
-        height: 80vh;
+        height: 83vh;
         top: 7rem;
         background-color: #e68635;
         display: flex;
@@ -332,6 +329,9 @@ h2{
     }
     #contact{
         flex-direction: column;
+    }
+    .contact_item{
+        width: 100%;
     }
     
     
